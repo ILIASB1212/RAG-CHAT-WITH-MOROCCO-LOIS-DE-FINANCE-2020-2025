@@ -27,15 +27,45 @@ This project is built using a modern **RAG** stack to create a robust and effici
 
 Before you begin, ensure you have the following installed:
 
-- Python 3.10
-- Git
+- **Python 3.10**
+- **Git**
 
 ### Step-by-Step Guide
 
-1. **Clone the Repository**:
+1. **Clone the Repository, Create a Virtual Environment, Install Dependencies, and Set Up API Keys**:
+
+   - Clone the repository:
+
+     ```bash
+     git clone https://github.com/ILIASB1212/RAG-CHAT-WITH-MOROCCO-LOIS-DE-FINANCE-2020-2025.git
+     ```
+
+   - Create a virtual environment:
+
+     ```bash
+     conda create -p env python==3.10 -y
+     ```
+
+   - Install the required dependencies:
+
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+   - Create a `.env` file in the project root directory and add your API keys:
+
+     ```bash
+     OPENAI_API_KEY="your_openai_api_key_here"
+     GROQ_API_KEY="your_groq_api_key_here"
+     LANGCHAIN_API_KEY="your_langchain_api_key_here"
+     ```
+
+   - Add your documents: Place all the public finance PDF files from **2020 to 2025** into a new directory named `data` in the project root.
+
+2. **Running the Application**:
+
+   Once everything is set up, run the Streamlit application from your terminal:
 
    ```bash
-   git clone https://github.com/ILIASB1212/RAG-CHAT-WITH-MOROCCO-LOIS-DE-FINANCE-2020-2025.git
-
-   conda create -p env python==3.10 -y
-Create a Virtual Environment:
+   streamlit run app.py
+This will open the application in your web browser, where you can start asking questions.
