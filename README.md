@@ -36,3 +36,6 @@ Before you begin, ensure you have the following installed:
 
    ```bash
    git clone https://github.com/ILIASB1212/RAG-CHAT-WITH-MOROCCO-LOIS-DE-FINANCE-2020-2025.git
+
+   conda create -p env python==3.10 -y
+Create a Virtual Environment:
