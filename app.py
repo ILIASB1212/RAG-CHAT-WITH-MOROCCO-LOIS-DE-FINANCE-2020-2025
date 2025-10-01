@@ -23,7 +23,7 @@ os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = "LOIS DE FINANCE RAG"
 
 #setup document loader and vector store
-
+st.title("chat with lois de finance ")
 def embeding_vectorstore():
     if "vectors" not in st.session_state:
         try:
